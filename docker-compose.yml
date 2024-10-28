@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'demo-redis'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=test'
+      - 'MYSQL_PASSWORD=gsmarin'
+      - 'MYSQL_ROOT_PASSWORD=gsmarin'
+      - 'MYSQL_USER=gsmarin'
+    ports:
+      - '3306:3306'
